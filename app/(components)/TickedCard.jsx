@@ -17,8 +17,16 @@ const TickedCard = () => {
       <p className="whitespace-pre-wrap">
         This is the ticket description, please do ticket things here
       </p>
-      <ProgressBar />
-      <StatusDisplay />
+      <div className="flex-grow"></div>
+      <div className="flex mt-2">
+        <div className="flex flex-col">
+          <p className="text-cs my-1">31/08/23 10:43PM</p>
+          <ProgressBar />
+        </div>
+        <div className="ml-auto flex items-end">
+          <StatusDisplay />
+        </div>
+      </div>
     </div>
   )
 }
